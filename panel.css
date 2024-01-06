@@ -1,0 +1,22 @@
+body {
+    background-color: #ffffff;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-style: oblique;
+    
+    background-color: #80BFFF;
+
+
+}
+  img {
+    background-image: -webkit-linear-gradient(30%);
+    background-position: center;
+
+  }
+
+  

@@ -1,0 +1,30 @@
+.redes-sociales a img {
+  max-width: 50px; /* Ancho máximo de las imágenes */
+  height: auto; /* Para mantener la proporción */
+}
+
+
+.PERFILES {
+  display: flex;
+  justify-content: space-around; /* Espaciado equitativo entre las imágenes */
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.titulo-imagen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para el título */
+  padding: 5px; /* Espaciado alrededor del título */
+  display: none; /* Ocultar el título inicialmente */
+}
+
+.image-container:hover .titulo-imagen {
+  display: block; /* Mostrar el título al pasar el cursor sobre la imagen */
+}
+
