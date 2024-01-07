@@ -16,8 +16,8 @@
 
 .titulo-imagen {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 30%;
+  left: 30%;
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para el título */
   padding: 5px; /* Espaciado alrededor del título */
@@ -26,5 +26,37 @@
 
 .image-container:hover .titulo-imagen {
   display: block; /* Mostrar el título al pasar el cursor sobre la imagen */
+  size: auto;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: auto;
+}
+
+
+
+
+
+h2 {
+  text-align: center;
+  margin: 0 auto;
+  width: 500px;
+  size: 100px;
+}
+
+/* Estilos para la imagen específica */
+.small-image {
+  max-width: 200px; /* Ancho máximo de la imagen */
+  display: block; /* Para asegurar que el margen auto funcione */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.label {
+  size-adjust: 70PX;
+
 }
 
