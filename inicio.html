@@ -6,6 +6,13 @@
   <img src="./img/inicio.jpeg" alt="inicio">
   <h2>Software Master Pro 12</h2>
   <link rel="stylesheet" href="inicio.css">
+  <link rel="stylesheet" href="formulario.js">
+  
+  <script>
+    function abrirVentanaUsuarioNuevo() {
+      window.open("./templates/formulario.html", "_blank", "width=400,height=400");
+    }
+  </script>
 </head>
 <body>
   <div class="container">
@@ -24,7 +31,15 @@
         </div>
         <button type="submit" class="btn btn-primary">Iniciar sesión</button>
       </form>
+      <button onclick="abrirVentanaUsuarioNuevo()" class="btn btn-secondary">Usuario Nuevo</button>
+      <script>
+        function abrirVentanaUsuarioNuevo() {
+          window.open("formulario.html", "_blank", "width=400,height=400");
+        }
+      </script>
+      
     </div>
+    
     <div class="footer">
       <p>Copyright © 2023 Software Master Pro 12</p>
     </div>

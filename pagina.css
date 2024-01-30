@@ -1,6 +1,19 @@
+body{
+  background-color: rgb(200, 255, 127);
+}
+
+
+
+
 .redes-sociales a img {
-  max-width: 50px; /* Ancho máximo de las imágenes */
+  max-width: 30px; /* Ancho máximo de las imágenes */
   height: auto; /* Para mantener la proporción */
+  top: 30%;
+  left: 30%;
+ size-adjust: 5px;
+ padding: .3%;
+ 
+
 }
 
 
@@ -33,7 +46,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 60%;
   height: auto;
 }
 
@@ -50,7 +63,7 @@ h2 {
 
 /* Estilos para la imagen específica */
 .small-image {
-  max-width: 200px; /* Ancho máximo de la imagen */
+  max-width: 150px; /* Ancho máximo de la imagen */
   display: block; /* Para asegurar que el margen auto funcione */
   margin: 0 auto; /* Centrar horizontalmente */
 }
