@@ -9,7 +9,11 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar la conexión
 if ($conn->connect_error) {
+<<<<<<< HEAD
   die("Error en la conexión: " . $conn->connect_error);
+=======
+    die("Error en la conexión: " . $conn->connect_error);
+7c6881358a5784174461ce0c1094f78d7d00e460
 }
 
 // Obtener datos del formulario
@@ -20,6 +24,7 @@ $correo = $_POST["correo"];
 $contrasena = $_POST["contrasena"];
 $repetir_contrasena = $_POST["repetir_contrasena"];
 
+ HEAD
 // Validar nombre
 if (!preg_match("/^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/", $nombre)) {
   echo "<p>El nombre solo puede contener letras y espacios.</p>";
@@ -50,10 +55,19 @@ if ($contrasena !== $repetir_contrasena) {
 }
 
 // Encriptar la contraseña
+
+// Verificar si las contraseñas coinciden
+if ($contrasena !== $repetir_contrasena) {
+    die("Las contraseñas no coinciden");
+}
+
+// Encriptar la contraseña (puedes usar funciones más seguras)
+7c6881358a5784174461ce0c1094f78d7d00e460
 $contrasena_encriptada = password_hash($contrasena, PASSWORD_DEFAULT);
 
 // Insertar datos en la base de datos
 $sql = "INSERT INTO usuarios (nombre, apellidos, cedula, correo, contrasena) 
+<<<<<<< HEAD
   VALUES ('$nombre', '$apellidos', '$cedula', '$correo', '$contrasena_encriptada')";
 
 if ($conn->query($sql) === TRUE) {
@@ -63,6 +77,17 @@ if ($conn->query($sql) === TRUE) {
   </div>';
 } else {
   echo "Error al crear usuario: " . $conn->error;
+
+        VALUES ('$nombre', '$apellidos', '$cedula', '$correo', '$contrasena_encriptada')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Usuario creado exitosamente";
+    // Redirigir al usuario a la página después del inicio de sesión
+    header("Location: pagina.html");
+    exit(); // Importante: asegúrate de salir del script después de la redirección
+} else {
+    echo "Error al crear usuario: " . $conn->error;
+7c6881358a5784174461ce0c1094f78d7d00e460
 }
 
 // Cerrar la conexión
