@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear Nuevo Usuario</title>
+  <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+  <h2>Crear Nuevo Usuario</h2>
+  <form action="credenciales.php" method="post">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre" required pattern="^[a-zA-Z ]+$" title="Solo se permiten letras y espacios">
+      <span class="mensaje-ayuda">* Solo letras y espacios</span>
+    </div>
+
+    <div class="form-group">
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required pattern="^[a-zA-Z ]+$" title="Solo se permiten letras y espacios">
+      <span class="mensaje-ayuda">* Solo letras y espacios</span>
+    </div>
+
+    <div class="form-group">
+      <label for="cedula">Cédula:</label>
+      <input type="number" id="cedula" name="cedula" placeholder="Cédula" required pattern="^[0-9]+$" title="Solo se permiten números">
+      <span class="mensaje-ayuda">* Solo números</span>
+    </div>
+
+    <div class="form-group">
+      <label for="correo">Correo:</label>
+      <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo electrónico" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+      <span class="mensaje-ayuda">* Ingresa un correo electrónico válido</span>
+    </div>
+
+    <div class="form-group">
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required pattern="^(?=.*[A-Z]).{8,}$">
+      <span class="mensaje-ayuda">* Mínimo 8 caracteres, al menos una mayúscula</span>
+    </div>
+
+    <div class="form-group">
+      <label for="repetir_contrasena">Repetir contraseña:</label>
+      <input type="password" id="repetir_contrasena" name="repetir_contrasena" placeholder="Repetir contraseña" required pattern="^(?=.*[A-Z]).{8,}$">
+      <span class="mensaje-ayuda">* Debe coincidir con la contraseña anterior</span>
+    </div>
+
+    <button type="submit">Guardar Usuario</button>
+  </form>
+</body>
+</html>

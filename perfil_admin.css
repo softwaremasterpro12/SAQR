@@ -1,0 +1,79 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  /* Encabezado */
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  header img {
+    width: 150px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  /* Botones principales */
+  
+  .botones-principales {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .botones-principales button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .botones-principales button:hover {
+    background-color: #eee;
+  }
+  
+  /* Modificaciones especiales */
+  
+  .modificaciones-especiales {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .modificaciones-especiales h3 {
+    margin-top: 0;
+  }
+  
+  .modificaciones-especiales button {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    cursor: pointer;
+  }
+  
+  .modificaciones-especiales button:hover {
+    background-color: #eee;
+  }
+  
