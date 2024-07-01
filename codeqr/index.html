@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventario Código QR</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="formulario" class="formulario" enctype="multipart/form-data">
+            <label for="item">Item:</label>
+            <input type="text" id="item" name="item" required>
+            <label for="insumo">Insumo:</label>
+            <input type="text" id="insumo" name="insumo" required>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+            <label for="valorUnidad">Valor Unidad:</label>
+            <input type="number" id="valorUnidad" name="valorUnidad" required>
+            <label for="valorTotal">Valor Total:</label>
+            <input type="number" id="valorTotal" name="valorTotal" readonly>
+            <!-- Botón para generar el código QR -->
+            <button type="button" class="btn" id="generarQRBtn">Generar QR</button>
+            <!-- Botón para guardar los datos -->
+            <button type="submit" class="btn" id="guardarBtn">Guardar Insumo en Inventario</button>
+        </form>
+        <div class="contenedorQR" id="contenedorQR"></div>
+    </div>
+</body>
+</html>
